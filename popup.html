@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Screenshot tool for making a full page or partial screen capture with further edit, download or text adding.">
+  <meta name="keywords" content="screenshot, image editor, editor, image editing">
+  <meta name="author" content="Haikel Fazzani">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Screenshot tool</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    }
+    .btn-1 {
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      width: fit-content;
+      padding: 5px 10px;
+      color: rgb(255, 255, 255);
+      margin: 8px;
+      background-color: rgb(75, 148, 216);
+      border-radius: 8px;
+      white-space: nowrap;
+      min-width: fit-content;
+      min-height: 50px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <button type="button" id="c-selection" class="btn-1">
+      capture selection
+    </button>
+    <button type="button" id="c-fullpage" class="btn-1">
+      capture full page
+    </button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
